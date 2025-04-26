@@ -16,7 +16,7 @@ export default function Home() {
 
       <main className="flex-1 flex flex-col items-center justify-center text-center p-8 space-y-6">
         <h1 className="text-5xl font-extrabold">Create Full-Stack Apps with AI</h1>
-        <p className="text-xl">Transform your ideas into full websites and backend systems effortlessly using our AI-powered platform. Perfect for developers, entrepreneurs, and businesses.</p>
+        <p className="text-xl">Transform your ideas into full websites and backend systems effortlessly using our AI-powered platform.</p>
         <Link href="/signup" className="px-6 py-3 bg-white text-green-500 rounded-lg text-lg font-semibold hover:bg-gray-100">Get Started Free</Link>
       </main>
 
