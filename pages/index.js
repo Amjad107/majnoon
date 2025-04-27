@@ -19,12 +19,19 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative flex flex-col items-center text-center justify-center flex-1 px-6 py-20 overflow-hidden">
-        <Image src="/background.svg" alt="Background" layout="fill" objectFit="cover" objectPosition="center" className="opacity-30 -z-10" />
+        <Image
+          src="/background.png"
+          alt="Background"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          className="opacity-30 -z-10"
+        />
         <h1 className="text-6xl font-extrabold leading-tight mb-6">
           Build Full-Stack Websites<br /> with Smart AI
         </h1>
         <p className="text-2xl max-w-2xl mb-8 text-gray-700 dark:text-gray-300">
-          Instantly create frontend, backend, APIs, and workflows — all from one simple prompt.
+          Instantly create frontend, backend, APIs, and workflows — all from a single simple prompt.
         </p>
         <div className="flex space-x-4">
           <Link href="/signup" className="px-8 py-4 rounded-full bg-green-500 text-white text-lg font-bold hover:bg-green-600 transition">
