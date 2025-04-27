@@ -8,7 +8,14 @@ export default function Home() {
       {/* Navbar */}
       <header className="flex justify-between items-center px-10 py-6">
         <div className="flex items-center space-x-2">
-          <Image src="/logo.png" alt="Majnoon Logo" width={50} height={50} />
+           <Image
+    src="/logo.png"
+    alt="Majnoon Logo"
+    width={48}
+    height={48}
+    priority
+    className="rounded-full"
+  />
           <span className="text-2xl font-bold">Majnoon Smart AI Builder</span>
         </div>
         <div className="space-x-4">
