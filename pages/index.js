@@ -1,14 +1,15 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-white via-blue-50 to-green-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-white">
-      
+    <div className="flex flex-col min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+
       {/* Navbar */}
       <header className="flex justify-between items-center px-10 py-6">
-        <div className="flex items-center space-x-2 font-bold text-2xl">
-          <div className="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center">MSA</div>
-          <span>Majnoon AI Builder</span>
+        <div className="flex items-center space-x-2">
+          <Image src="/logo.png" alt="Majnoon Logo" width={50} height={50} />
+          <span className="text-2xl font-bold">Majnoon Smart AI Builder</span>
         </div>
         <div className="space-x-4">
           <Link href="/login" className="px-5 py-2 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition">Log In</Link>
@@ -17,12 +18,13 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="flex flex-col items-center text-center justify-center flex-1 px-6 py-16">
+      <section className="relative flex flex-col items-center text-center justify-center flex-1 px-6 py-20 overflow-hidden">
+        <Image src="/background.svg" alt="Background" layout="fill" objectFit="cover" objectPosition="center" className="opacity-30 -z-10" />
         <h1 className="text-6xl font-extrabold leading-tight mb-6">
           Build Full-Stack Websites<br /> with Smart AI
         </h1>
         <p className="text-2xl max-w-2xl mb-8 text-gray-700 dark:text-gray-300">
-          Instantly create frontend, backend, APIs, and workflows — all from a single simple prompt.
+          Instantly create frontend, backend, APIs, and workflows — all from one simple prompt.
         </p>
         <div className="flex space-x-4">
           <Link href="/signup" className="px-8 py-4 rounded-full bg-green-500 text-white text-lg font-bold hover:bg-green-600 transition">
